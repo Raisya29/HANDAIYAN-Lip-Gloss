@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANDAIYAN Lip Gloss Premium Velvet Matte - Glamor Abadi untuk Wanita Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/291da5c306.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1b4332',
+                        'primary-medium': '#2d5a3d',
+                        'primary-light': '#d4af37',
+                        'primary-cream': '#f5f5dc',
+                        'accent-white': '#ffffff',
+                        'rating-gold': '#ffd700',
+                        'promo-red': '#e53e3e',
+                    },
+                    fontFamily: {
+                        heading: ['Cormorant Garamond', 'serif'],
+                        body: ['Open Sans', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'glass': '0 0 15px rgba(0, 0, 0, 0.1)',
+                        'elegant': '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f5f5dc;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b49025;
+        }
+        
+        .glass-effect {
+            background: rgba(29, 67, 50, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+        }
+        
+        .lightbox-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            background: transparent;
+        }
+        
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 80vh;
+            border: 4px solid #f5f5dc;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+        
+        .close-lightbox {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            background: #d4af37;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #1b4332;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .close-lightbox:hover {
+            transform: rotate(90deg);
+            background: #1b4332;
+            color: #d4af37;
+        }
+        
+        .social-proof {
+            position: fixed;
+            top: 30px;
+            right: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            z-index: 100;
+            opacity: 0;
+            transform: translateX(120%);
+            transition: all 0.4s cubic-bezier(.175, .885, .32, 1.275);
+            border-left: 4px solid #d4af37;
+        }
+        
+        .social-proof.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .sticky-nav.sticky {
+            background: rgba(29, 67, 50, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .stock-counter {
+            position: relative;
+            display: inline-block;
+            background: #ff4141;
+            padding: 3px 12px;
+            border-radius: 20px;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 65, 65, 0.5); }
+            70% { box-shadow: 0 0 0 8px rgba(255, 65, 65, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 65, 65, 0); }
+        }
+        
+        .countdown-box {
+            background: linear-gradient(135deg, #1b4332, #2d5a3d);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .countdown-item {
+            flex: 1;
+            text-align: center;
+            position: relative;
+        }
+        
+        .countdown-item:not(:last-child)::after {
+            content: ":";
+            position: absolute;
+            right: -5px;
+            top: 10px;
+            font-size: 30px;
+            color: #d4af37;
+        }
+        
+        .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 90;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-item {
+            margin: 15px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .testimonial-photo {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-photo:hover {
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            transform: translateY(-3px);
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.7); }
+            50% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.9); }
+            100% { box-shadow: 0 0 5px rgba(212, 175, 55, 0.7); }
+        }
+        
+        .glow-button {
+            animation: glow 2s infinite;
+        }
+        
+        .feature-card {
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="font-body bg-white text-gray-800">
+    <!-- Lightbox Container -->
+    <div class="lightbox-overlay">
+        <div class="lightbox-content">
+            <span class="close-lightbox">
+                <i class="fas fa-times"></i>
+            </span>
+            <img src="" alt="Full Testimonial Image" class="lightbox-image mx-auto">
+        </div>
+    </div>
+    
+    <!-- Social Proof Popup -->
+    <div class="social-proof">
+        <div class="relative w-12 h-12 mr-4">
+            <img src="https://ae01.alicdn.com/kf/S3196b929c2f04c97be1ad4efde21cfd96.jpg" alt="Customer avatar" class="rounded-full w-12 h-12 object-cover border-2 border-primary-light">
+            <span class="absolute -bottom-1 -right-1 bg-primary-light rounded-full w-5 h-5 flex items-center justify-center">
+                <i class="fas fa-shopping-cart text-primary-dark text-xs"></i>
+            </span>
+        </div>
+        <div class="flex-1">
+            <strong class="text-primary-medium">Dina</strong> dari <strong>Jakarta</strong> baru saja memesan HANDAIYAN Lip Gloss<br>
+            <span class="text-sm text-gray-500">5 menit yang lalu</span>
+        </div>
+    </div>
+    
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <div class="max-w-md w-full mx-auto">
+            <a href="#order" class="bg-gradient-to-r from-primary-medium to-primary-dark hover:from-primary-dark hover:to-primary-medium text-white text-center font-body font-bold py-3 px-6 rounded-full shadow-lg glow-button flex justify-center items-center">
+                <i class="fas fa-shopping-cart mr-2"></i>PESAN SEKARANG - TERBATAS!
+                <span class="ml-3 bg-red-500 text-white rounded-full px-3 py-1 text-sm">27 ITEM TERJUAL</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-tr from-primary-dark to-primary-medium">
+        <!-- Animated leaf decoration elements -->
+        <div class="absolute top-20 left-10 w-16 h-16 opacity-50 rotate-12">
+            <div class="w-full h-full rounded-full bg-primary-light" style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+        </div>
+        
+        <div class="absolute inset-0 opacity-5 z-10">
+            <div class="pattern-graph-paper text-primary-light" style="opacity: 0.02;"></div>
+        </div>
+        
+        <div class="absolute inset-0">
+            <img src="https://ae01.alicdn.com/kf/S3196b929c2f04c97be1ad4efde21cfd96.jpg" alt="Lip Gloss Background" class="w-full h-full object-cover object-center opacity-50">
+        </div>
+        
+        <div class="container mx-auto px-4 md:px-8 relative z-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="glass-effect p-8 md:p-12 rounded-2xl text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-cream leading-tight">HANDAIYAN<br>
+                        <span class="text-primary-light inline-block mt-2">Velvet Matte Lip Gloss</span></h1>
+                    <p class="text-xl text-white mt-6 opacity-90 max-w-2xl">
+                        Tampilan mewah dengan hasil akhir velvet matte yang tahan lama. <span class="font-semibold">Cocok untuk semua warna kulit wanita Indonesia</span>.
+                    </p>
+                
+                    <div class="mt-8 mb-6 inline-block py-2 px-4 bg-red-600 rounded-full text-base text-white">
+                        <span class="line-through">Rp 175.000</span> 
+                        <span class="font-bold text-3xl ml-2 font-heading">Rp 168.000</span>
+                    </div>
+                
+                    <div class="mt-8">
+                        <div class="flex justify-center lg:justify-start">
+                            <div class="flex items-center mr-8">
+                                <div class="bg-white text-primary-medium rounded-full p-2 mr-3">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <span class="text-primary-cream text-sm">Gratis Ongkir</span>
+                            </div>
+                        
+                            <div class="flex items-center mr-8">
+                                <div class="bg-white text-primary-medium rounded-full p-2 mr-3">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <span class="text-primary-cream text-sm">Garansi 1 Bulan</span>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-white text-primary-medium rounded-full p-2 mr-3">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <span class="text-primary-cream text-sm">Pembayaran Aman</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="mt-8">
+                        <div class="mb-4">
+                            <span class="text-white font-medium">Hanya Tersisa:</span> 
+                            <span class="stock-counter">27 Item Stok</span>
+                        </div>
+                        <a href="#order" class="btn-order bg-gradient-to-r from-primary-light to-primary-medium hover:from-amber-400 hover:to-primary-light text-primary-dark font-bold text-xl py-4 px-12 rounded-full inline-block mt-4 transform hover:scale-105 transition-all duration-300 glow-button animate-pulse">
+                            <i class="fas fa-shopping-cart mr-3"></i>PESAN SEKARANG
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="hidden lg:block">
+                    <div class="relative pl-12">
+                        <div class="bg-gradient-to-br from-primary-light via-amber-200 to-primary-light rounded-lg shadow-xl p-6 w-96 mx-auto animate-bounce-slow">
+                            <img src="https://ae01.alicdn.com/kf/S00e02895e6d0453eae39dca3c0a95ff0S.jpg" alt="HANDAIYAN Lip Gloss" class="w-full h-auto rounded-lg transform rotate-12">
+                        </div>
+                        
+                        <div class="absolute top-40 right-0 bg-primary-medium text-white rounded-full py-2 px-4 font-semibold transform rotate-12">
+                            Velvet Matte
+                        </div>
+                        
+                        <div class="absolute bottom色-20 left-0 bg-primary-light text-primary-medium rounded-full py-2 px-4 font-semibold transform -rotate-12">
+                            Tahan Lama
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Intro Section -->
+    <section class="py-16 bg-primary-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <span class="inline-block text-primary-medium bg-green-100 px-4 py-1 rounded-full mb-4">Keunggulan Premium</span>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-dark mb-6">Lip Gloss yang Mewah dan Berkualitas Tinggi</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">HANDAIYAN Lip Gloss dirancang khusus dengan formula premium yang memberikan hasil akhir velvet matte sempurna. Dengan 6 varian warna yang disesuaikan dengan warna kulit wanita Indonesia, produk ini memberikan kenyamanan sepanjang hari tanpa mengeringkan bibir.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white glass-effect p-8 rounded-2xl shadow-lg text-center transition-all">
+                    <div class="text-primary-light text-4xl mb-4">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary-dark mb-4">Efek Velvet Matte Mewah</h3>
+                    <p class="text-gray-700">Menyajikan hasil akhir yang lebih mewah dan elegan daripada lipstick biasa dengan sentuhan velvet yang unik.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white glass-effect p-8 rounded-2xl shadow-lg text-center transition-all">
+                    <div class="text-primary-light text-4xl mb-4">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary-dark mb-4">Tahan Lama 8+ Jam</h3>
+                    <p class="text-gray-700">Fornula tahan lama yang tetap terlihat segar tanpa perlu mengoleskan ulang selama lebih dari 8 jam.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white glass-effect p-8 rounded-2xl shadow-lg text-center transition-all">
+                    <div class="text-primary-light text-4xl mb-4">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-primary-dark mb-4">Bibir Terasa Sehat</h3>
+                    <p class="text-gray-700">Memelihara kelembaban bibir dengan vitamin E dan argan oil untuk bibir yang lebih sehat dan kenyal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Product Showcase -->
+    <section class="py-16 bg-gradient-to-b from-primary-cream to-accent-white" id="gallery">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-dark mb-6">
+                    <span class="text-primary-light block">6 Varian Unggulan</span>
+                    Cocok untuk Semua Warna Kulit
+                </h2>
+                <p class="text-gray-700 text-lg max-w-3xl mx-auto">Setiap varian HANDAIYAN Lip Gloss dibuat khusus untuk mempercantik warna kulit wanita Indonesia. Varian warna premium yang tidak mudah pudar dan memberi Anda kepercayaan diri sepanjang hari.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- Color 1 -->
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="p-4 flex justify-center">
+                        <img src="https://ae01.alicdn.com/kf/S2f3871b1e9644b7d9f714fe873df2ae0q.jpg" alt="Variant 1" class="rounded-lg">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-primary-dark">Variant Ruby</h4>
+                        <p class="text-sm mt-1">Red Plum</p>
+                    </div>
+                </div>
+                
+                <!-- Color 2 -->
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="p-4 flex justify-center">
+                        <img src="https://ae01.alicdn.com/kf/S8aaaaf92bb404005af17b99f2fa9853aN.jpg" alt="Variant 2" class="rounded-lg">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-primary-dark">Variant Cherry</h4>
+                        <p class="text-sm mt-1">Pink Peach</p>
+                    </div>
+                </div>
+                
+                <!-- Color 3 -->
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="p-4 flex justify-center">
+                        <img src="https://ae01.alicdn.com/kf/S901f0dc9d48b46a285175c7e05f3732bZ.jpg" alt="Variant 3" class="rounded-lg">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-primary-dark">Variant Rose</h4>
+                        <p class="text-sm mt-1">Mauve Rose</p>
+                    </div>
+                </div>
+                
+                <!-- Color 4 -->
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="p-4 flex justify-center">
+                        <img src="https://ae01.alicdn.com/kf/S38799d2d188b4c1f83d2962609b07035K.jpg" alt="Variant 4" class="rounded-lg">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-primary-dark">Variant Nude</h4>
+                        <p class="text-sm mt-1">Beige Brown</p>
+                    </div>
+                </div>
+                
+                <!-- Color 5 -->
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="p-4 flex justify-center">
+                        <img src="https://ae01.alicdn.com/kf/S05ecf514d4b648f99d04382be6512a551.jpg" alt="Variant 5" class="rounded-lg">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-primary-dark">Variant Coral</h4>
+                        <p class="text-sm mt-1">Orange Coral</p>
+                    </div>
+                </div>
+                
+                <!-- Color 6 -->
+                <div class="product-card bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="p-4 flex justify-center">
+                        <img src="https://ae01.alicdn.com/kf/S00e02895e6d0453eae39dca3c0a95ff0S.jpg" alt="Variant 6" class="rounded-lg">
+                    </div>
+                    <div class="p-4 text-center">
+                        <h4 class="font-bold text-primary-dark">Variant Berry</h4>
+                        <p class="text-sm mt-1">Berry Plum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Video Demo -->
+    <section class="py-16 bg-primary-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-dark mb-6">Lihat Kualitas Premium</h2>
+                <p class="text-lg text-gray-700">Simak video demo untuk melihat kelebihan dan keistimewaan HANDAIYAN Lip Gloss yang langsung dapat Anda saksikan!</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="video-container">
+                    <iframe src="https://video.aliexpress-media.com/play/u/ae_sg_item/2214979975761/p/1/e/6/t/10301/1100137132868.mp4?from=chrome" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-16 bg-gradient-to-b from-white to-primary-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-dark mb-4">
+                    <span class="text-primary-light block">Testimoni Pelanggan</span>
+                    Wanita Indonesia Terpukau!
+                </h2>
+                <div class="flex justify-center items-center">
+                    <div class="flex">
+                        <i class="fas fa-star text-amber-400 text-3xl"></i>
+                        <i class="fas fa-star text-amber-400 text-3xl"></i>
+                        <i class="fas fa-star text-amber-400 text-3xl"></i>
+                        <i class="fas fa-star text-amber-400 text-3xl"></i>
+                        <i class="fas fa-star text-amber-400 text-3xl"></i>
+                    </div>
+                    <span class="text-lg font-semibold ml-4 text-primary-medium">4.9/5.0 (852 ulasan)</span>
+                </div>
+            </div>
+            
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-item transform transition-all shadow-md hover:shadow-xl">
+                    <div class="flex items-start mb-4">
+                        <img src="https://i.pinimg.com/1200x/94/09/7b/94097b95ea4ff200f1d3095a4ac5270f.jpg" alt="Siti Rohmah" class="rounded-full w-12 h-12 object-cover mr-3">
+                        <div>
+                            <h4 class="font-bold text-primary-dark">sitirohmah</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Sangat puas n kualitasnya sangat bagus, tahan lama, suka sekali👍👍"</p>
+                    <img src="https://cdn.hotishop.com/image/78f6a8bada0e85f57827c8fc3720f01056685f23-400.jpeg" alt="Siti rohmah review" class="testimonial-photo rounded cursor-pointer" data-fullimage="https://cdn.hotishop.com/image/78f6a8bada0e85f57827c8fc3720f01056685f23-400.jpeg">
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-item transform transition-all shadow-md hover:shadow-xl">
+                    <div class="flex items-start mb-4">
+                        <img src="https://i.pinimg.com/736x/0a/42/4d/0a424df146dd179afbbfbad3dd4691d7.jpg" alt="Heniwarsih" class="rounded-full w-12 h-12 object-cover mr-3">
+                        <div>
+                            <h4 class="font-bold text-primary-dark">heniwinarsih</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Cantik, d photo sama asli sama, saya suka bnget 🥰"</p>
+                    <img src="https://cdn.hotishop.com/image/0a5f76df6786c9d3df915adb435a861c03e02072-400.jpeg" alt="Heniwarsih review" class="testimonial-photo rounded cursor-pointer" data-fullimage="https://cdn.hotishop.com/image/0a5f76df6786c9d3df915adb435a861c03e02072-400.jpeg">
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-item transform transition-all shadow-md hover:shadow-xl">
+                    <div class="flex items-start mb-4">
+                        <img src="https://i.pinimg.com/736x/a9/50/eb/a950ebdd790e7853450271cef78ec367.jpg" alt="Devegaaprilia" class="rounded-full w-12 h-12 object-cover mr-3">
+                        <div>
+                            <h4 class="font-bold text-primary-dark">devegaaprilia</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                                <i class="fas fa-star text-amber-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Bagus dan ak suka warnanya cocok , pelayanannya juga bagus, kurirnya juga baik 👍"</p>
+                    <img src="https://down-id.img.susercontent.com/file/id-11134103-7r98w-ly8x7ayuff45d0.webp" alt="Devegaaprilia review" class="testimonial-photo rounded cursor-pointer" data-fullimage="https://down-id.img.susercontent.com/file/id-11134103-7r98w-ly8x7ayuff45d0.webp">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="py-16 bg-gradient-to-t from-white via-primary-cream to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-dark mb-4">
+                    <span class="text-primary-light block">Harga Spesial</span>
+                    Promo Terbatas
+                </h2>
+                <p class="text-gray-700 max-w-2xl mx-auto">Manfaatkan penawaran ini sebelum kami kembali ke harga normal. Pesan sekarang sebelum kehabisan stok!</p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto relative">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Package Set A -->
+                    <div class="bg-white glass-effect rounded-2xl shadow-xl overflow-hidden">
+                        <div class="p-6 bg-gradient-to-br from-primary-medium to-primary-dark">
+                            <h3 class="text-xl font-heading font-bold text-center text-white mb-2">SET A</h3>
+                            <p class="text-center text-primary-cream opacity-80">6 Pcs Lip Gloss + Velvet Pouch</p>
+                        </div>
+                        
+                        <div class="p-8 text-center">
+                            <div class="flex justify-center items-end">
+                                <div class="text-3xl font-heading font-bold text-primary-medium">
+                                    Rp <span class="text-5xl">168</span>.000
+                                </div>
+                            </div>
+                            <div class="text-gray-500 mt-2 line-through">Rp 175.000</div>
+                            
+                            <ul class="my-8 space-y-3">
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span>6 Pcs HANDAIYAN Lip Gloss</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span>Velvet Pouch</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span></span>
+                                </li>
+                            </ul>
+                            
+                            <a href="#order" class="btn-order mt-4 bg-gradient-to-b from-primary-light to-primary-medium hover:from-amber-400 hover:to-primary-light text-primary-dark font-bold py-3 px-8 rounded-full inline-block w-full transition-all">Pilih Paket Ini</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Package Set B - Highlighted -->
+                    <div class="bg-white glass-effect rounded-2xl shadow-xl overflow-hidden relative border-2 border-primary-light">
+                        <div class="absolute top-0 right-0 bg-primary-light text-primary-dark font-bold px-6 py-2 transform rotate-12 translate-x-4 -translate-y-4">
+                            TERLARIS
+                        </div>
+                        <div class="p-6 bg-gradient-to-br from-primary-light to-amber-400">
+                            <h3 class="text-xl font-heading font-bold text-center text-primary-dark mb-2">SET B</h3>
+                            <p class="text-center text-primary-dark opacity-80">6 Pcs Lip Gloss + Premium Pouch</p>
+                        </div>
+                        
+                        <div class="p-8 text-center">
+                            <div class="flex justify-center items-end">
+                                <div class="text-3xl font-heading font-bold text-primary-medium">
+                                    Rp <span class="text-5xl">168</span>.000
+                                </div>
+                            </div>
+                            <div class="text-gray-500 mt-2 line-through">Rp 175.000</div>
+                            
+                            <ul class="my-8 space-y-3">
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span>6 Pcs HANDAIYAN Lip Gloss</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span>Velvet Pouch</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span></span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span></span>
+                                </li>
+                            </ul>
+                            
+                            <a href="#order" class="btn-order mt-4 bg-gradient-to-t from-primary-medium to-primary-dark text-white font-bold py-3 px-8 rounded-full inline-block w-full transition-all hover:opacity-90 glow-button animate-pulse">Pilih Paket Terlaris</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Package Set Bulk -->
+                    <div class="bg-white glass-effect rounded-2xl shadow-xl overflow-hidden">
+                        <div class="p-6 bg-gradient-to-br from-primary-medium to-primary-dark">
+                            <h3 class="text-xl font-heading font-bold text-center text-white mb-2">12 PCS SPECIAL</h3>
+                            <p class="text-center text-primary-cream opacity-80">Cocok untuk dijual kembali</p>
+                        </div>
+                        
+                        <div class="p-8 text-center">
+                            <div class="flex justify-center items-end">
+                                <div class="text-3xl font-heading font-bold text-primary-medium">
+                                    Rp <span class="text-5xl">249</span>.000
+                                </div>
+                            </div>
+                            <div class="text-gray-500 mt-2 line-through">Rp 350.000</div>
+                            
+                            <ul class="my-8 space-y-3">
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span>12 Pcs HANDAIYAN Lip Gloss</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span>Retail Box Premium</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="bg-primary-light bg-opacity-20 p-1 rounded-full mr-3">
+                                        <i class="fas fa-check-circle text-primary-light"></i>
+                                    </div>
+                                    <span>Gratis Pengiriman</span>
+                                </li>
+                            </ul>
+                            
+                            <a href="#order" class="btn-order mt-4 bg-gradient-to-b from-primary-light to-primary-medium hover:from-amber-400 hover:to-primary-light text-primary-dark font-bold py-3 px-8 rounded-full inline-block w-full transition-all">Pilih Paket Super Promo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div class="mt-16 text-center">
+                    <div class="countdown-box mb-4">
+                        <div class="countdown-item">
+                            <div class="text-4xl font-bold font-heading">01</div>
+                            <div class="text-sm mt-1">Hari</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="text-4xl font-bold font-heading">23</div>
+                            <div class="text-sm mt-1">Jam</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="text-4xl font-bold font-heading">45</div>
+                            <div class="text-sm mt-1">Menit</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div class="text-4xl font-bold font-heading">30</div>
+                            <div class="text-sm mt-1">Detik</div>
+                        </div>
+                    </div>
+                    <p class="text-promo-red font-bold">Promo spesial berakhir dalam waktu terbatas!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Order Form -->
+    <section class="py-16 bg-white" id="order">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="glass-effect bg-gradient-to-br from-primary-cream via-accent-white to-primary-cream p-8 rounded-3xl shadow-2xl">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary-dark mb-4">
+                            Pesan Sekarang
+                        </h2>
+                        <p class="text-lg text-gray-700">Isi formulir pemesanan dibawah untuk melakukan pembelian HANDAIYAN Lip Gloss</p>
+                    </div>
+                    
+                    <!-- OrderOnline Embed -->
+                    <div class="rounded-2xl overflow-hidden">
+                        <!-- OrderOnline Embed Code - v8.0.4 -->
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="vera" data-product-slug="handaiyan-lip-gloss" data-product-id="688cde6adcc7661fd7078b06" id="oo-embed-form-handaiyan-lip-gloss-8930" data-origin="orderonline">
+                            <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                        <script>
+                         if (typeof xLogError != 'function') {
+                           var xLogError = function (error) {
+                             var req = new XMLHttpRequest();
+                             var payload = JSON.stringify({ url: document.location.href, line: error.line, stack: error.stack });
+                             var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                             req.open('POST', 'https://api.orderonline.id/log', true);
+                             req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                             req.send(params);
+                           };
+                         }
+                         try {
+                           if (typeof xEmbedScript != 'function') {
+                             var xEmbedScript = function () {
+                               !function(w, d, e, v, id, t, s) {
+                                 if (d.getElementById(id)) return;
+                                 t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                 s = d.getElementsByTagName(e)[0];
+                                 s.parentNode.insertBefore(t, s);
+                               }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                             };
+                           }
+                           if (typeof xEmbedInit != 'function') {
+                             var xEmbedInit = function (w, n) {
+                               if (w.ooe) return;
+                               n = w.ooe = function() {
+                                 n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                               };
+                               if (!w._ooe) w._ooe = n;
+                               n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                             };
+                           }
+                           xEmbedInit(window);
+                           ooe('setup', 'redirect', 'https://vera.orderonline.id');
+                           ooe('init', '5f1a7807a9bf807d6c63d963', '688cde6adcc7661fd7078b06', '688cde6adcc7661fd7078b07', 'oo-embed-form-handaiyan-lip-gloss-8930', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":true});
+                           if (!window.jQuery) {
+                             !function(w, d, e, v, id, t, s) {
+                               if (d.getElementById(id)) return;
+                               t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                               t.addEventListener('load', xEmbedScript);
+                               s = d.getElementsByTagName(e)[0];
+                               s.parentNode.insertBefore(t, s);
+                             }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                           } else {
+                             xEmbedScript();
+                           }
+                         } catch (e) {
+                           xLogError(e);
+                           throw e;
+                         }
+                        </script>
+                        <!-- End OrderOnline Embed Code -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ and Guarantee -->
+    <section class="py-16 bg-primary-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="glass-effect bg-gradient-to-t from-white to-primary-cream p-8 rounded-3xl shadow-lg">
+                    <h2 class="text-2xl md:text-3xl font-heading font-bold text-primary-dark text-center mb-10">Pertanyaan Umum</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary-medium mb-2"><i class="fas fa-question-circle text-primary-light mr-2"></i>Apakah barang asli lembut dan nyaman dipakai?</h3>
+                            <p class="text-gray-700 pl-8">YA! HANDAIYAN Lip Gloss sangat lembut dan nyaman digunakan karena terbuat dari material premium dengan teknologi terkini. Terasa ringan seperti tidak mengenakan lipstick sama sekali.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-primary-medium mb-2"><i class="fas fa-question-circle text-primary-light mr-2"></i>Bagaimana dengan garansi produk?</h3>
+                            <p class="text-gray-700 pl-8">Kami memberikan garansi kepuasan 100%. Jika Anda tidak puas dengan produk, kami akan mengembalikan uang Anda tanpa perlu mengembalikan barang. Tidak ada pertanyaan yang diajukan! Garansi berlaku selama 30 hari.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold text-primary-medium mb-2"><i class="fas fa-question-circle text-primary-light mr-2"></i>Berapa lama pengirimannya?</h3>
+                            <p class="text-gray-700 pl-8">Kami mengirimkan pesanan di hari yang sama jika Anda memesan sebelum jam 15:00 WIB. Di Jakarta/Bandung dikirim pakai GO-SEND dan beresiko COD. Untuk luar kota menggunakan JNE Regular dan akan sampai dalam 2-5 hari kerja diproses.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center p-6 bg-white rounded-xl">
+                            <div class="text-4xl mb-3 text-primary-medium">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <h4 class="font-bold text-primary-dark mb-2">Gratis Ongkir</h4>
+                            <p class="text-sm">Minimal pembelian Rp 300,000 untuk seluruh Indonesia</p>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-white rounded-xl">
+                            <div class="text-4xl mb-3 text-primary-medium">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h4 class="font-bold text-primary-dark mb-2">Garansi 30 Hari</h4>
+                            <p class="text-sm">Garansi uang kembali jika tidak puas dengan produk</p>
+                        </div>
+                        
+                        <div class="text-center p-6 bg-white rounded-xl">
+                            <div class="text-4xl mb-3 text-primary-medium">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4 class="font-bold text-primary-dark mb-2">Pembayaran Aman</h4>
+                            <p class="text-sm">Penjual menjaga keamanan pembayaran melalui partner terpercaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gradient-to-b from-primary-medium to-primary-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h3 class="font-heading text-2xl font-bold mb-4 text-primary-light">HANDAIYAN</h3>
+                    <p class="text-primary-cream opacity-90">Produk kecantikan premium eksklusif untuk wanita Indonesia yang mencintai dirinya sendiri.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Kategori</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Lip Gloss</a></li>
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Lip Care</a></li>
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Maskara</a></li>
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Skincare</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Dukungan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Pusat Bantuan</a></li>
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Metode Pembayaran</a></li>
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Pengembalian Barang</a></li>
+                        <li><a href="#" class="text-primary-cream opacity-90 hover:text-white">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Kontak</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="fab fa-whatsapp text-primary-light mr-3"></i> 0811-8765-4321</li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-primary-light mr-3"></i> hello@handaiyan.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-primary-light mr-3"></i> Jakarta, Indonesia</li>
+                    </ul>
+                    
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-primary-cream opacity-90 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-primary-cream opacity-90 hover:text-white text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-primary-cream opacity-90 hover:text-white text-xl"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-primary-cream opacity-90 hover:text-white text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-700 mtot-8 pt-8 text-center">
+                <p class="text-primary-cream">&copy; 2023 HANDAIYAN Beauty. Hak Cipta Dilindungi. Produk Made in Indonesia.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const countdownElements = {
+                days: document.querySelector('.countdown-item:nth-child(1) .text-4xl'),
+                hours: document.querySelector('.countdown-item:nth-child(2) .text-4xl'),
+                minutes: document.querySelector('.countdown-item:nth-child(3) .text-4xl'),
+                seconds: document.querySelector('.countdown-item:nth-child(4) .text-4xl')
+            };
+
+            // Set the target date (24 hours from now)
+            const targetDate = new Date();
+            targetDate.setDate(targetDate.getDate() + 1);
+            targetDate.setHours(0, 0, 0, 0);
+
+            const now = new Date();
+            const diff = targetDate - now;
+
+            // Calculate time remaining
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Update the display
+            countdownElements.days.textContent = days.toString().padStart(2, '0');
+            countdownElements.hours.textContent = hours.toString().padStart(2, '0');
+            countdownElements.minutes.textContent = minutes.toString().padStart(2, '0');
+            countdownElements.seconds.textContent = seconds.toString().padStart(2, '0');
+        }
+
+        // Initialize and update every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Social Proof System
+        document.addEventListener('DOMContentLoaded', () => {
+            // Names and cities
+            const names = ['Vina', 'Dina', 'Kartika', 'Lestari', 'Putri', 'Maya Sari', 'Rani', 'Permata', 'Lestari F'];
+            const cities = ['Jakarta', 'Surabaya', 'Bandung', 'Medan', 'Bekasi', 'Tangerang', 'Depok', 'Semarang'];
+            
+            const socialPopup = document.querySelector('.social-proof');
+            
+            if(socialPopup) {
+                let popupInterval;
+                let hideTimeout;
+                
+                // Function to show new popup
+                function showPopup() {
+                    // Select random name and city
+                    const randomName = names[Math.floor(Math.random() * names.length)];
+                    const randomCity = cities[Math.floor(Math.random() * cities.length)];
+                    const randomMins = Math.floor(Math.random() * 15) + 1;
+                    
+                    // Update content
+                    socialPopup.innerHTML = `
+                        <div class="relative w-12 h-12 mr-4">
+                            <img src="https://ae01.alicdn.com/kf/S3196b929c2f04c97be1ad4efde21cfd96.jpg" alt="Customer avatar" class="rounded-full w-12 h-12 object-cover border-2 border-primary-light">
+                            <span class="absolute -bottom-1 -right-1 bg-primary-light rounded-full w-5 h-5 flex items-center justify-center">
+                                <i class="fas fa-shopping-cart text-primary-dark text-xs"></i>
+                            </span>
+                        </div>
+                        <div class="flex-1">
+                            <strong class="text-primary-medium">${randomName}</strong> dari <strong>${randomCity}</strong> baru saja memesan HANDAIYAN Lip Gloss<br>
+                            <span class="text-sm text-gray-500">${randomMins} menit yang lalu</span>
+                        </div>
+                    `;
+                    
+                    // Show popup
+                    socialPopup.classList.add('active');
+                    
+                    // Set timeout to hide after 5 seconds
+                    hideTimeout = setTimeout(() => {
+                        socialPopup.classList.remove('active');
+                    }, 5000);
+                }
+                
+                // Initial call and interval
+                setTimeout(showPopup, 5000); // First popup after 5 seconds
+                popupInterval = setInterval(showPopup, 8000); // Repeat every 8 seconds
+                
+                // Pause on hover
+                socialPopup.addEventListener('mouseenter', () => {
+                    clearTimeout(hideTimeout);
+                    clearInterval(popupInterval);
+                });
+                
+                // Resume when mouse leaves
+                socialPopup.addEventListener('mouseleave', () => {
+                    hideTimeout = setTimeout(() => {
+                        socialPopup.classList.remove('active');
+                    }, 5000);
+                    
+                    popupInterval = setInterval(showPopup, 8000);
+                });
+            }
+            
+            // Testimonial Lightbox System
+            const lightboxOverlay = document.querySelector('.lightbox-overlay');
+            const lightboxImage = lightboxOverlay.querySelector('.lightbox-image');
+            const closeButton = lightboxOverlay.querySelector('.close-lightbox');
+            const testimonialPhotos = document.querySelectorAll('.testimonial-photo');
+            
+            // Open lightbox when testimonial photo is clicked
+            testimonialPhotos.forEach(photo => {
+                photo.addEventListener('click', () => {
+                    const imgUrl = photo.dataset.fullimage;
+                    lightboxImage.src = imgUrl;
+                    lightboxOverlay.classList.add('active');
+                });
+            });
+            
+            // Close lightbox
+            closeButton.addEventListener('click', hideLightbox);
+            lightboxOverlay.addEventListener('click', (e) => {
+                if(e.target === lightboxOverlay) hideLightbox();
+            });
+            
+            // Hide on ESC key
+            document.addEventListener('keyup', (e) => {
+                if(e.key === 'Escape') hideLightbox();
+            });
+            
+            function hideLightbox() {
+                lightboxOverlay.classList.remove('active');
+            }
+            
+            // Header scroll effect
+            window.addEventListener('scroll', () => {
+                const heroSection = document.querySelector('section.relative');
+                const heroHeight = heroSection.offsetHeight;
+                
+                if(heroHeight > 0 && window.scrollY > heroHeight / 3) {
+                    document.querySelector('.floating-cta').classList.add('opacity-100', 'translate-y-0');
+                } else {
+                    document.querySelector('.floating-cta').classList.add('opacity-0', 'translate-y-10');
+                }
+            });
+            
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Sticky header
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.sticky-nav');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('sticky');
+                } else {
+                    navbar.classList.remove('sticky');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
